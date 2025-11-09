@@ -1,0 +1,42 @@
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  select {
+    background-color: transparent;     
+    color: #45305b;     
+    border: none;
+    padding: 6px 30px 6px 10px;
+    font-size: 14px;
+    border-radius: 16px;
+    appearance: none;       
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+  }
+
+  /* flèche personnalisée */
+  .dropdown::after {
+    content: "▾";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #bcbcbc;
+    pointer-events: none;
+    font-size: 12px;
+  }
+
+  select:focus {
+    outline: none;
+  }
+
+  option {
+    background-color: #2a2a2a;
+    color: #d0d0d0;
+  }
+
+  select:hover {
+     color: #391c58;  
+  }

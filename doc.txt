@@ -1,0 +1,4 @@
+rm -rf node_modules package-lock.json
+npm install openai
+npm install @google/genai mime
+npm install -D @types/node
